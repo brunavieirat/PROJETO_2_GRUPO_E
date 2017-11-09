@@ -17,49 +17,46 @@
         html, body{
             width: 100%;
             height: 100%;
-            background: white;
+            background: gray;
         }
             .logo__mobile{
                 
-                height: 70px;
+                height: 100px;
                 width: 70px;
                 float:left;
                 background: url(img/logo1.png) no-repeat;
                                
-            }     
+            }
+      
 
      
       .header{
           width: 100%;
           height: 13%;
-          padding: 2%; 
-         background-color: #242222;
+          padding: 2%;
+         background-color: #000000;
           
       }
 
   
-.navbar{     
+.navbar{
+     
           
           font-family: 'Candal', sans-serif;          
           font-size: 1em;
-          
 }
 
 
 .ul__mobile {
-    display: block;
  list-style-type: none;
  color: white;
 /*margin: 10%;;*/
-   font-size: 1em;
- width: 100%;
-height: 70%; 
+margin-top:6%;
  }
 
 .li__mobile{
     float: left;
-    margin: 6% 1% 1% 1%;
-     
+    margin: 1%;
 }
 a{
     
@@ -67,14 +64,6 @@ text-decoration:none;
 color: white;
 }
 
- .ul__tablet{
-    display: none;
-}
-
-.menu__tablet{
-    display: none;
-} 
-  
 
  @media screen and (min-width: 768px) {
 
@@ -82,10 +71,6 @@ color: white;
             padding: 0;
             margin: 0;
             box-sizing: border-box;
-        }
-
-        body{
-            background:gray;
         }
 
     .header{
@@ -97,7 +82,7 @@ color: white;
         }
 
         
-        .logo{
+        .logo__tablet{
                 height: 200px;
                 width: 200px;
                 margin: 0 5% 0 5%;
@@ -142,7 +127,7 @@ margin-bottom: 15%;
 }
 
 .ul__tablet{
-display: block;
+
 list-style-type: none;
 float: left;
 margin-top:4%;
@@ -152,7 +137,6 @@ margin-top:4%;
         list-style-type: none;
     }
   .menu__tablet{
-   display: block;
    width: 55%;
    height: 100%;
    margin: 0 auto;
@@ -170,62 +154,6 @@ margin-top:4%;
     
     }
 
-
-
-    @media screen and (min-width: 1024px) {
-       
-        .navbar{     
-             
-          font-size: 1.3em;
-          
-        }
-       
-        .header{
-          
-            height: 35%;
-            
-        }
-
-        .logo{
-                height: 270px;
-                width: 270px;                
-                float:left;   
-                background-size: 270px;          
-                margin: 0;                                    
-            }
-
-.menu__tablet{
-   display: block;
-   width: 100%;
-   height: 100%;
-   margin: 0 0 0 3%;
- } 
- .ul__tablet{
-
-list-style-type: none;
-float: left;
-width: 35%;
-margin-top:10%;
-  
-}
-
-
-
-.menu__tablet-esq{
-/* text-align: right; */
-margin-right: 5%;
-float: left;
-
-}
-.menu__tablet-dir{
-/* text-align: right; */
-margin-left: 5%;
-float: left;
-
-}
-
-    }
-
             </style>
     </head>
     <body>
@@ -240,21 +168,21 @@ float: left;
         <li class="menu__tablet-esq"><a href="#">WHY US?</a></li>
     </ul>
 
-     <figure class="logo"> </figure>
-        
+    <ul> 
+        <li> <figure class="logo__tablet"> </figure>
+        </li>
+    </ul>
     <ul class="ul__tablet">
         <li class="menu__tablet-dir"><a href="#">BLOG</a></li>
         <li class="menu__tablet-dir"><a href="#">ABOUT</a></li>
         <li class="menu__tablet-dir"><a href="#">CONTACT</a></li>
 
-
+<!--<img src="img/logo1.png" alt="logo">-->
 
     
 
 
 </div>
-
-<figure class="logo__mobile"></figure>
 
 <ul class="ul__mobile ">
     <li class="li__mobile "><a href="#">WORK</a></li>
