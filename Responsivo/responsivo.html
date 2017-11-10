@@ -70,6 +70,7 @@
         color: #A6ACAF;
         font-size: 1.1em;
         line-height:1.2em;
+        
       }
       .content__section__icon {
     width: 10%;
@@ -80,7 +81,7 @@
     background-size: 100%;
     height: 2.5em;
 }
-      .linha {
+      .linha-main {
    
     width: 100%;
     border: 6px dashed #E5E7E9;
@@ -93,6 +94,7 @@
     /* height: 20%; */
     width: 100%;
     padding: 5%; 
+    float: right;
         
        
 }
@@ -175,14 +177,50 @@ color: white;
 } 
   
 
+.conteudo{    
+    display: inline;
+    width:100% ;
+    
+}
+.conteudo div{  
+    padding: 5%;
+}
+
  @media screen and (min-width: 768px) {
+
+    
+   
+    .linha-main {
+   margin: 0;
+    width: 50%;
+    float: right;
+
+    }
+    section{
+        padding-left: 5%;
+        padding-right: 8%;
+       
+    }
     
     main{
         width: 100%;
         height: 100%;
+         
+        
     }
-    .content__section {
-        display: none;
+    .conteudo div{  
+    
+    float: left;
+    display: block;
+    width: 50%;
+}
+
+    .content__section{
+        padding-left: 10%;
+        width: 60%;
+        height: 18%;
+        text-align: right;
+        float: right;
     }
         
     .title__style{
@@ -196,6 +234,11 @@ color: white;
             padding-left: 10%
         }
 
+
+        .content__section__icon {
+            width: 10%;
+            height: 40%;
+        }
     .header{
             width: 100%;
             height: 18%;
@@ -203,16 +246,12 @@ color: white;
              background-color: #FFFFFF; 
             
         }
-        
-        .linha {
-   
-    width: 80%;
-    border: 6px dashed #E5E7E9;
-    margin: 0 auto;
-    margin-top: 30px;
-    
-    
-}
+        .linha {    
+            width: 100%;    
+            border: none !important;
+            height: 14px;
+            background: url(http://weaveweb.com.au/sites/all/themes/weavepublic/images/sprite.gif) no-repeat scroll 50% 0;
+        }
 
         .title{
          width: 50%;
@@ -371,7 +410,7 @@ margin-top:10%;
   
 }
 
-.linha__responsiva {
+.linha {
     width: 100%;
     border: none !important;
     height: 14px;
@@ -434,12 +473,12 @@ float: left;
 <body></body>
 <main>
 <section class="title__style">
-        <section ></section>
+        
 <div class="title">
     
     <h1>Websites with purpose</h1>
     <h2>Aute fugiat laborum laborum ad quis non fugiat laborum laborum ad ad non</h2>
-    <hr class="linha">
+    <hr class="linha-main">
 </div>
 
     <figure class="main__img">
@@ -454,9 +493,9 @@ float: left;
     </div>
     
     </section>
-    <hr class="linha">
+    <hr class="linha-main">
 <section class="content__section">
-        <div class="content-__section-title">
+        <div class="content__section-title">
             <h3>Not-for-profit organizations</h3>
             <p>Quis culpa fugiat nisi do esse voluptate et laborum.</p>
         </div>
@@ -465,7 +504,7 @@ float: left;
         </a>
       
     </section>
-    <hr class="linha">
+    <hr class="linha-main">
     <section class="content__section">
             <div class="content-__section-title">
     <h3>Retailers</h3>
@@ -476,7 +515,20 @@ float: left;
 </a>
 
 </section>
-   
+<hr class="linha">
+<div class="conteudo">
+        <div>
+            <h2>Content strategy for a new government website</h2>
+            <p>Weave is helping a newly created State Government agency with audience research, messaging, information architecture and content planning.</p>
+        </div>
+       
+        <div>
+            <h2>Planning for a large-scale content migration</h2>
+            <p>We're helping Australia's largest Drupal agency plan a large-scale migration for a government client, from a static HTML website to a new Drupal site.</p>
+        </div>
+
+        
+    </div>
 
 </main>
 
