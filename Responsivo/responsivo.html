@@ -43,21 +43,18 @@
       }
       .title{
          width: 100%;
-        height: 10%;
+         height: 25%;
+         padding: 5%;
+        /* height: 50%; */
         /* float: right; */
         background-color: #E5E7E9;
         padding-top: 2%;
+        /* text-align: center; */
+        /* position: absolute; */
         
                
       }
 
-      .title__style{
-        width: 100%;
-        height: 1%;
-        background-color: #E5E7E9;
-        padding: 6%;
-               
-      }
 
 
       .title h1{
@@ -117,6 +114,9 @@
 }
   .main__img{
 
+    margin: -100px 10% 0 0; 
+          
+    
     border: 2px solid #c1c1c1;
     border-style: inset;
     box-shadow: inset 0 2px 5px black;
@@ -127,9 +127,13 @@
     background-image: url(img/banner.png);
     background-size: 17em;
     margin: 0 auto;
-    display: block;
+   
+    /* height: 10%; */
+    
      
   }
+  
+ 
 
   .main__subtitle{
     text-align: center;
@@ -226,6 +230,7 @@ color: white;
     color: #ffffff;
     padding: 12px 0 12px 2.08%;
     margin-top: 13px;
+    
 }
 
 .divisao div {
@@ -320,6 +325,8 @@ color: white;
     .title__style{
         width: 100%;
         height: 20%;
+        background-color: #E5E7E9;
+        padding: 6%;
 
     }
         section{
@@ -353,6 +360,7 @@ color: white;
         float: right;
         background-color: #E5E7E9;
         padding-top: 2%;
+        position: initial;
         
                
       }
@@ -469,7 +477,7 @@ margin-top:10%;
 
     @media screen and (min-width: 1024px) {
        
-
+        
         .title h1{
           font-size: 2.4em;
       }
@@ -565,6 +573,32 @@ float: left;
 
 }
 
+.imagem_rodape{
+    display: block;
+}
+.divisao {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: inline;    
+    width: 62.48%;
+    height: 100%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: #e31936;
+    color: #ffffff;
+    padding: 12px 0 12px 2.08%;
+    margin-top: 13px;
+}
+
+.rodape figure {
+        display: inherit;
+      
+    } 
+
+
     }
 
             </style>
@@ -617,9 +651,10 @@ float: left;
 </div>
 
     <figure class="main__img">
-
+        
         
     </figure>
+
     
     <div class="main__subtitle">
         <p>Cillum ex cupidatat et pariatur officia.</p>
@@ -690,9 +725,9 @@ float: left;
                 <img src="http://weaveweb.com.au/sites/all/themes/weavepublic/images/thethread-logo.png">
             </figure>
             <div class="divisao">
-                <div>
+                
                     <p>Thoughts on content: from our brains to your inbox</p>
-                </div>
+                
                 <div class="escrito">
                     <label>Sign up for the Weave Web newsletter:</label>
                     <input type="text" placeholder="email adress..."></input>
