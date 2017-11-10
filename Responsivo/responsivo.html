@@ -24,7 +24,8 @@
             font-family: 'Baloo Bhaijaan', cursive;
             
         }
-            .logo__mobile{
+
+        .logo__mobile{
                 
                 height: 70px;
                 width: 70px;
@@ -71,6 +72,13 @@
         font-size: 1.1em;
         line-height:1.2em;
         
+      }
+
+      .titulo{
+        font-size: 1.8em;
+        color:#FF3352;
+        padding: 1% 5% 1% 5%;
+
       }
       .content__section__icon {
     width: 10%;
@@ -183,12 +191,98 @@ color: white;
     
 }
 .conteudo div{  
-    padding: 5%;
+
+    padding: 2% 5% 2% 5%;
+    
 }
+
+
+.rodape{
+    clear: both;    
+    height: 15%;
+    position: relative;    
+}
+.rodape figure {
+    display: none;
+    position: absolute;
+    margin-right: -20px; 
+    z-index: 100;
+    bottom: 0;
+    right: 62.48%;
+}
+
+.divisao {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: block;    
+    width: 100%;
+    height: 90%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: #e31936;
+    color: #ffffff;
+    padding: 12px 0 12px 2.08%;
+    margin-top: 13px;
+}
+
+.divisao div {
+    width: 50%;
+    display: inline;
+}
+
+.divisao p {
+    font-family: "Ruluko", Arial, san-serif;
+    font-weight: normal;
+}
+
+.rodape div label {
+    font-family: "Ruluko", Arial, san-serif;
+    font-size: 0.98em;
+    padding: 2px 0 5px;
+}
+
+
+.escrito {
+    display: inline;
+    float: right;
+    width: 49%;
+    padding-right: 2.08%;
+    margin-bottom: 0;    
+}
+
+.escrito input {
+    border: none;
+    padding: 8px 10px;
+    color: #333333;
+    font-size: 16px;
+    position: relative;
+    width: 69%;
+    z-index: 5;
+    box-shadow: none;
+    border-radius: 16px;
+}
+
+
+
+
 
  @media screen and (min-width: 768px) {
 
-    
+    .divisao{
+        width: 100%;
+    }
+    .conteudo div {  
+        display: inline-block;            
+        float: none; 
+        width: 45%;        
+    } 
+
+    .title h2{
+        font-size: 1.2em;
+    }
    
     .linha-main {
    margin: 0;
@@ -346,7 +440,7 @@ margin-bottom: 15%;
 display: block;
 list-style-type: none;
 float: left;
-margin-top:4%;
+margin-top:10%;
   
 }
     ul{
@@ -375,6 +469,47 @@ margin-top:4%;
 
     @media screen and (min-width: 1024px) {
        
+
+        .title h1{
+          font-size: 2.4em;
+      }
+
+      .title h2{
+        font-size: 1.2em;
+    }
+        .conteudo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1030px;
+    }
+    .content__section__icon {
+            width: 8%;
+            height: 40%;
+        }
+
+    .content__section{
+        height: 35%;
+    }
+    .div_titulo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1020px;
+    }
+
+    .title__style{
+        width: 100%;
+        height: 40%;
+
+    }
+
+    .rodape{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1020px;  
+    }
         .navbar{     
              
           font-size: 1.3em;
@@ -406,7 +541,7 @@ margin-top:4%;
 list-style-type: none;
 float: left;
 width: 35%;
-margin-top:10%;
+margin-top:15%;
   
 }
 
@@ -470,7 +605,7 @@ float: left;
 
 </navbar>
 </header>
-<body></body>
+<body>
 <main>
 <section class="title__style">
         
@@ -516,6 +651,9 @@ float: left;
 
 </section>
 <hr class="linha">
+<div class="div_titulo">
+        <h1 class="titulo">Current Projects</h1>
+        </div>
 <div class="conteudo">
         <div>
             <h2>Content strategy for a new government website</h2>
@@ -529,8 +667,42 @@ float: left;
 
         
     </div>
+    <hr class="linha">
+    <div class="div_titulo">
+    <h1 class="titulo">Latest articles</h1>
+    </div>
+    <div class="conteudo">
 
+        <div>
+            <h2>Content strategy for a new government website</h2>
+            <p>27th January 2016 See the slides from Angus's talk at DrupalGov Canberra 2016</p>
+        </div>
+
+        <div>
+            <h2>Planning for a large-scale content migration</h2>
+            <p>6th August 2015 If we're serious about design and content intertwining, we have to accept that client discussions about design and content will intertwine too..</p>
+        </div>
+
+    </div>
 </main>
+    <footer class="rodape">
+            <figure class="imagem_rodape">
+                <img src="http://weaveweb.com.au/sites/all/themes/weavepublic/images/thethread-logo.png">
+            </figure>
+            <div class="divisao">
+                <div>
+                    <p>Thoughts on content: from our brains to your inbox</p>
+                </div>
+                <div class="escrito">
+                    <label>Sign up for the Weave Web newsletter:</label>
+                    <input type="text" placeholder="email adress..."></input>
+                    <button type="button">sign up</button>
+                </div>
+            </div>
+        </footer>
+
+
+
 
     </body>
 </html>
